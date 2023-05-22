@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>621</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QPushButton" name="pushButton_store_vis">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>430</y>
+       <width>341</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上传数据</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_TEMP">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>250</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上传TEMP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EDA">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上传EDA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ACC">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>140</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上传ACC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_file1">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>未选择EDA文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_file2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>150</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>未选择ACC文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_file3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>250</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>未选择TEMP文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>360</y>
+       <width>63</width>
+       <height>69</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>请输入数据名称</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_getname">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>380</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>431</width>
+       <height>441</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_choose_data">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_confirm_data">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>20</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确认选择</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_is_artifact">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>100</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>是伪迹</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_previous">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>180</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上一段数据</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_next">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>260</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下一段数据</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_is_not_artifact">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>340</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>不是伪迹</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_export">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>420</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>导出数据</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>时间段选择</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始时间：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>50</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>结束时间：</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>130</y>
+       <width>431</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>AUC</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>振幅</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>SCR唤起时间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>SCR复原时间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>SCR数量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_ISCR"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_AUC"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_amplitude"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>ISCR</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_SCR_num"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_SCR_arousal"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_SCR_recovery"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_feature_start">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>50</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_feature_end">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>50</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_upload">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>20</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上传数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_label_data">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>标记数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_extract_feature">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提取指标</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
